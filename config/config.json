@@ -1,1 +1,13 @@
-{}
+{
+  "theme": {
+    "slug": "asu-web-standards-2020-theme",
+    "name": "ASU Web Standards 2020 Theme",
+    "author": "ASU Global Futures Laboratory",
+    "PHPNamespace": "GFL\\WebStandards2020"
+  },
+  "dev": {
+    "browserSync": {
+      "proxyURL": "wprig.test:8888"
+    }
+  }
+}
