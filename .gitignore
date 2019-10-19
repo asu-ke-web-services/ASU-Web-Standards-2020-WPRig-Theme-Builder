@@ -44,3 +44,5 @@
 !screenshot.png
 !.travis.yml
 !.browserslistrc
+
+!*.png
