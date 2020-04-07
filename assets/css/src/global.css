@@ -20,11 +20,13 @@
 /*--------------------------------------------------------------
 # Imports
 --------------------------------------------------------------*/
-@import "_custom-properties.css";
+/* @import "_custom-properties.css";
 @import "_reset.css";
 @import "_typography.css";
 @import "_elements.css";
-@import "_links.css";
+@import "_links.css"; */
+
+@import "../../../node_modules/asu-web-standards-bootstrap4/dist/css/bootstrap-asu.css";
 
 /*--------------------------------------------------------------
 # Accessibility
