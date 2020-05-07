@@ -28,10 +28,23 @@ namespace WP_Rig\WP_Rig;
 	?>
 
 	<?php wp_head(); ?>
+
+	<!-- Begin ASU Heads -->
+	<?php asuwp_load_global_head_scripts(); ?>
+	<!-- END ASU Heads -->
+
 </head>
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+
+<!-- ASU GTM -->
+<!-- End ASU GTM -->
+
+<!-- Begin ASU Header  -->
+<?php asuwp_load_global_header(); ?>
+<!-- END ASU Header -->
+
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'wp-rig' ); ?></a>
 

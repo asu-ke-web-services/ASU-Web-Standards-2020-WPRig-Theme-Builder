@@ -46,3 +46,5 @@
 !.browserslistrc
 
 !*.png
+
+config/config.json

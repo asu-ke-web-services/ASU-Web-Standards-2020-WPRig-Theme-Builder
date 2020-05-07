@@ -7,7 +7,7 @@
 	# Typography
 	# Elements
 	# Links
-# Accessibility
+# ASU Global Elements# Accessibility
 # Layout
 # Forms
 # Header
@@ -27,6 +27,60 @@
 @import "_links.css"; */
 
 @import "../../../node_modules/asu-web-standards-bootstrap4/dist/css/bootstrap-asu.css";
+
+/*--------------------------------------------------------------
+# ASU Global Elements
+--------------------------------------------------------------*/
+
+/* Global Header */
+#asu_hdr {
+	width: 82%;
+	max-width: 1170px;
+	margin: 0 auto !important;
+}
+
+.logo_container {
+	display: none;
+}
+
+#main-header {
+	z-index: 10;
+}
+
+/* Site Name + Subsite Name */
+#sitename-wrapper .sitename {
+	position: relative;
+	width: 82%;
+	max-width: 1170px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 0 12px 10px;
+	font-size: 24px;
+}
+
+#sitename-wrapper .sitename a {
+	color: #666666;
+	font-weight: 700;
+	white-space: nowrap;
+	text-decoration: none;
+	border-bottom: none;
+	transition: none;
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: -0.5px;
+	line-height: 1;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+#sitename-wrapper .sitename #parent-site {
+	color: #2a2a2a;
+}
+
+#sitename-wrapper .sitename #parent-site:hover,
+#sitename-wrapper .sitename #current-site:hover {
+	color: #d23153;
+}
+
 
 /*--------------------------------------------------------------
 # Accessibility
