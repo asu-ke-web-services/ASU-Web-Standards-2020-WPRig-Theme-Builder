@@ -14,31 +14,39 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+?>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+<?php
+		get_header();
 
-wp_rig()->print_styles( 'wp-rig-content' );
+		wp_rig()->print_styles( 'wp-rig-content' );
 
 ?>
-	<main id="primary" class="site-main">
+
+				<?php
+				if ( have_posts() ) {
+
+
+					while ( have_posts() ) {
+						the_post();
+
+						get_template_part( 'template-parts/content/entry', get_post_type() );
+					}
+
+					if ( ! is_singular() ) {
+						get_template_part( 'template-parts/content/pagination' );
+					}
+				} else {
+					get_template_part( 'template-parts/content/error' );
+				}
+				?>
+
 		<?php
-		if ( have_posts() ) {
-
-			get_template_part( 'template-parts/content/page_header' );
-
-			while ( have_posts() ) {
-				the_post();
-
-				get_template_part( 'template-parts/content/entry', get_post_type() );
-			}
-
-			if ( ! is_singular() ) {
-				get_template_part( 'template-parts/content/pagination' );
-			}
-		} else {
-			get_template_part( 'template-parts/content/error' );
-		}
+		/* get_sidebar(); */
+		get_footer();
 		?>
-	</main><!-- #primary -->
-<?php
-get_sidebar();
-get_footer();
+		</div>
+	</div>
+</div>

@@ -81,6 +81,12 @@
 	color: #d23153;
 }
 
+/*!
+Hide the masthead
+*/
+#masthead {
+	display: none;
+}
 
 /*--------------------------------------------------------------
 # Accessibility
